@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+}
+.head
+{
+    background-color: darkblue;
+}
+.head p
+{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box
+{
+    width: 500px;/*600*/
+    height: 550px;
+    background-color: none;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+.box .header
+{
+    background-color: darkblue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.box .header p
+{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form
+{
+    display: flexbox;
+    width: 440px;/*640*/
+    height: auto;
+    border: none;
+    margin: auto;
+    padding: 5px;
+}
+.row
+{
+    padding: 1px;
+    margin-top: 2px;
+}
+.row .col-2
+{
+    text-align: left;
+}
+.row .col-4 input
+{
+    background: whitesmoke;
+    border-radius: 5px;
+    /*border: none;
+    outline: none;*/
+    padding: 3px;
+    margin-left: 50px;
+}
+.row .col-8 input
+{
+    background: whitesmoke;
+    border-radius: 5px;
+    /*border: none;
+    outline: none;*/
+    padding: 3px;   
+    margin-left: 25px;
+}
+.row .col-3 input
+{
+    background: whitesmoke;
+    border-radius: 5px;
+    /*border: none;
+    outline: none;*/
+    padding: 3px;   
+    width: 80px;
+}
+.vertical
+{
+    border-left: 4px solid black;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 110px;
+}
+/*student card details*/
+/*.container1
+{
+    margin-left: 80px;
+}*/
+.container1 .heading1
+{
+    background-color: darkblue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.container1 .heading2
+{
+    margin-left: 350px;
+    background-color: darkblue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.vertical1
+{
+    border-left: 2px solid greenyellow;
+    height: 115px;
+    position: absolute;
+    left: 50%;
+    margin-left: 130px;
+    top: 0px;
+}
+.container1 .student-list
+{
+    margin-top: 0px;
+    width: 500px;
+    border:1px solid greenyellow;
+}
+.container1 .student-list .card
+{
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 10px 10px;
+    border-bottom: 1px solid greenyellow;
+}
+.student-details
+{
+    margin: 10px;
+    width: 90%;
+}
+.container1 .student-list .card .student-details .row .col-2
+{
+    margin-left: 75px;
+}
+.std-name
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.std-country
+{
+    font-weight: bold;
+    color: mediumseagreen;
+}
+th
+{
+    border: 1px solid greenyellow;
+    background-color: greenyellow;
+    padding: 5px;
+    margin: 5px;
+}
+.desc
+{
+    width: 410px;
+}
+.img
+{
+    width:125px
+}
