@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+    <script>
+        function validateForm()
+        {
+            var x1=document.getElementById("mytext").value;
+            var x2=document.getElementById("mytext2").value;
+            var x3=document.getElementById("mytext1").value;
+            var x4=document.getElementById("image").value;
+            if(x1.length<=0)
+            {
+                alert("Name is required");
+                x1.focus();
+                return false;
+            }
+            if(x2.length<=0)
+            {
+                alert("email is required");
+                x2.focus();
+                return false;
+            }
+            if(x3.length<=0)
+            {
+                alert("website is required");
+                x3.focus();
+                return false;
+            }
+            if(x4.length<=0)
+            {
+                alert("image link is required");
+                x4.focus();
+                return false;
+            }
+            return false;
+        }
+    </script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="../student-enrollment-form/style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="head">
+        <p>Student Enrollment Form</p>
+    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="box">
+                <div class="header">
+                    <p>Event Registration Form</p>
+                </div>
+                <form onsubmit="validateForm()">
+                    <div class="row">
+                        <div class="col-2">
+                            <p>Name</p>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="mytext">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>Email</p>
+                        </div>
+                        <div class="col-8">
+                            <input type="email" id="mytext2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>Website</p>
+                        </div>
+                        <div class="col-8">
+                            <input type="url" id="mytext1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>Image</p>
+                        </div>
+                        <div class="col-8">
+                            <input type="url" id="image">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>Gender</p>
+                        </div>
+                        <div class="col-8">
+                            <input type="radio" id="male"  name="gender" value="male">Male<br>
+                            <input type="radio" id="female" name="gender" value="female">Female
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>Skills</p>
+                        </div>
+                        <div class="col-8">
+                            <input type="checkbox" name="skills[]" value="java">Java
+                            <input type="checkbox" name="skills[]" value="html" >HTML
+                            <input type="checkbox" name="skills[]" value="css">CSS
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <button class="btn btn-danger" value="submit" id="mybutton" >Enroll Student</button>
+                            <button class="btn btn-primary">Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="vertical"></div>
+        <div class="col-xl-6">
+            <div class="box">
+                <div class="header">
+                    <p>Enrolled Students</p>
+                </div>
+                <div class="container1"> 
+                    <table>
+                        <th class="desc">Description</th>
+                        <th class="img">Image</th>
+                    </table>
+                   <!-- <div class="student-list">
+                        <div class="card">
+                            
+                            <div class="student-details">
+                                <div class="row">
+                                    <div class="col-8">
+                                        
+                                        <div class="std-name">Manoj Jha</div>
+                                        <div class="std-gender">Male</div>
+                                        <div class="std-email">manoj@gmail.com</div>
+                                        <div class="std-country"><a href="#">xyz@gmail.com</a></div>
+                                    </div>
+                                    <div class="vertical1"></div>
+                                    <div class="col-2">
+                                        <img src="https://daily.wordreference.com/wp-content/uploads/2017/01/log.jpg" height="70" width="70">    
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../student-enrollment-form/script.js"></script>
+<!--<script>
+        function validateForm()
+        {
+            var x1=document.getElementById("mytext").value;
+            var x2=document.getElementById("mytext2").value;
+            var x3=document.getElementById("mytext3").value;
+            var x4=document.getElementById("image").value;
+            if(x1.length<=0)
+            {
+                alert("Name is required");
+                x1.focus();
+                return false;
+            }
+            if(x2.length<=0)
+            {
+                alert("email is required");
+                x2.focus();
+                return false;
+            }
+            if(x3.length<=0)
+            {
+                alert("website is required");
+                x3.focus();
+                return false;
+            }
+            if(x4.length<=0)
+            {
+                alert("image link is required");
+                x4.focus();
+                return false;
+            }
+            return false;
+        }
+    </script>-->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+   
+</body>
+</html>
